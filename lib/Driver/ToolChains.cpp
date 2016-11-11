@@ -41,7 +41,7 @@ using namespace llvm::opt;
 /// The name of the Swift migrator binary.
 static const char * const SWIFT_UPDATE_NAME = "swift-update";
 /// The limit for passing a list of files on the command line.
-static const size_t TOO_MANY_FILES = 128;
+static const size_t TOO_MANY_FILES = 512;
 
 static void addInputsOfType(ArgStringList &Arguments,
                             ArrayRef<const Action *> Inputs,
